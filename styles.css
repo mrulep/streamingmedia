@@ -1,0 +1,187 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 1.25em;
+    color: #FFF;
+}
+
+h2 {
+    color: #590242;
+}
+
+h3 {
+    color: #FFF;
+}
+
+h2, h3 {
+    font-size: 1em;
+}
+
+section > p {
+    color: #FFF;
+}
+
+p, dl, dd {
+    font-size: 1em;
+}
+
+dt {
+    font-style: italic;
+}
+
+footer p {
+    font-size: .75em;
+}
+
+footer {
+    color: #590242;
+    text-align: center;
+    background-color: #FFF;
+}
+
+#playlists {
+    background-color: #2699FB;
+}
+
+nav, #curated {
+    background-color: #020873;
+}
+
+nav a:hover {
+    background-color: #590242;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+#title{
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    margin: auto;
+}
+
+button {
+    text-decoration: none;
+    background-color: #590242;
+    color: #FFF;
+    text-align: center;
+    padding: 5px 35px;
+    border-radius: 2px;
+    border: none;
+}
+
+button:hover {
+    background-color: #020659;
+}
+
+#trending {
+    background-color: #FFF;
+    padding: 50px 20px;
+}
+
+
+@media screen and (min-width: 375px) {
+    body {
+        margin: 0 auto;
+        width: 375px;
+        background-color: #020659;
+    }
+    header {
+        color: white;
+        background-image: linear-gradient(to right, #2104D9, #020659);
+        padding: 5px 20px;
+    }
+    h2 {
+        color: #590242;
+    }
+
+    nav li a {
+        display: block;
+        padding: 20px;
+        padding-right: auto;
+        text-decoration: none;
+        color: #FFF;
+        left: 90px;
+    }
+
+    nav {
+        width: 375px;
+    }
+
+    dl {
+        color: #590242;
+        display: flex;
+    }
+
+    ul {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+    label {
+        cursor: pointer;
+        display: inline-block;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+    label span {
+        background-color: #ffffff;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background-color .2s ease-out;
+        width: 18px;
+    }
+    label span:before, label span:after {
+        background: #ffffff;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    label span:before {
+        top: 5px;
+    }
+    label span:after {
+        top: -5px;
+    }
+    input {
+        display: none;
+    }
+    input:checked ~ ul {
+        max-height: 500px;
+    }
+    input:checked ~ label span {
+        background: transparent;
+    }
+    input:checked ~ label span:before {
+        transform: rotate(-45deg);
+    }
+    input:checked ~ label span:after {
+        transform: rotate(45deg);
+    }
+    input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+        top: 0;
+    }
+
+}
+
+@media screen and (min-width: 834px) {
+
+}
