@@ -1,3 +1,30 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+p,
+dt,
+dl,
+dd,
+ul,
+main,
+img,
+audio,
+nav,
+header,
+a,
+footer,
+button,
+label,
+span,
+input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -63,7 +90,7 @@ dt {
 }
 
 dl {
-    margin-top: -15px;
+    margin-top: 10px;
     display: flex;
     color: #590242;
 }
@@ -245,6 +272,7 @@ audio::-webkit-media-controls-enclosure {
 
     nav {
         width: 375px;
+        padding-bottom: 30px;
     }
 
     ul {
@@ -308,6 +336,9 @@ audio::-webkit-media-controls-enclosure {
 }
 
 @media screen and (min-width: 834px) {
+    header {
+        padding: 20px;
+    }
     body {
         width: 834px;
         margin: 0 auto;
@@ -316,6 +347,7 @@ audio::-webkit-media-controls-enclosure {
     nav {
         width: 834px;
         height: 100px;
+        padding-bottom: 0px;
     }
 
     ul {
@@ -333,7 +365,7 @@ audio::-webkit-media-controls-enclosure {
     nav li {
         width: 85px;
         text-align: center;
-        margin-left: 70px;
+        margin-left: 80px;
     }
 
     nav li a {
@@ -343,7 +375,7 @@ audio::-webkit-media-controls-enclosure {
     }
 
     #title {
-        margin-left: -80px;
+        margin-left: -70px;
     }
 
     button {
